@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Indexer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Game Indexer</h1>
+            <button id="theme-toggle" class="theme-toggle">🌙</button>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search for a game...">
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="filters">
+            <select id="filter-repack">
+                <option value="all">All Repacks</option>
+                <option value="FitGirl">FitGirl</option>
+                <option value="SteamRIP">SteamRIP</option>
+            </select>
+        </div>
+
+        <div id="results" class="results">
+           
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

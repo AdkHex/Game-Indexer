@@ -1,0 +1,197 @@
+/* Base styling for the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2a2a37; /* Default dark background */
+    color: #f5e0dc; /* Default text color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    background-color: #1e1e2f; /* Darker container */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #f5e0dc; /* Title color */
+}
+
+.theme-toggle {
+    background-color: #f5e0dc;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #2a2a37;
+    transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: #f4a261; /* Light orange for hover */
+}
+
+/* Search Box */
+.search-box {
+    margin-bottom: 25px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 75%;
+    border-radius: 5px;
+    border: 1px solid #f4a261;
+    background-color: #3c3c56;
+    color: #f5e0dc;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    background-color: #f4a261;
+    color: #2a2a37;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#search-btn:hover {
+    background-color: #f1fa8c;
+}
+
+/* Filters */
+.filters {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.filters select {
+    padding: 8px;
+    margin-right: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #3c3c56;
+    border: 1px solid #f4a261;
+    color: #f5e0dc;
+}
+
+/* Results */
+.results {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.result-item {
+    background-color: #3c3c56;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.result-item:hover {
+    background-color: #5e5e7d;
+}
+
+.result-item h3 {
+    color: #f5e0dc;
+    font-size: 18px;
+}
+
+.result-item p {
+    color: #d9e0ff;
+}
+
+.result-item a {
+    color: #f4a261;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.result-item a:hover {
+    text-decoration: underline;
+}
+
+/* Repack info */
+.repack-info {
+    font-size: 14px;
+    color: #d9e0ff;
+    margin-top: 10px;
+}
+
+.repack-source {
+    font-weight: bold;
+}
+
+/* Light Theme */
+body.light-mode {
+    background-color: #f5e0dc; /* Light background */
+    color: #2a2a37; /* Dark text */
+}
+
+.container.light-mode {
+    background-color: #f5e0dc;
+    color: #2a2a37;
+}
+
+.theme-toggle.light-mode {
+    background-color: #2a2a37;
+    color: #f5e0dc;
+}
+
+.search-box.light-mode #search-input {
+    background-color: #e0e0f1;
+    color: #2a2a37;
+    border: 1px solid #2a2a37;
+}
+
+.search-box.light-mode #search-btn {
+    background-color: #2a2a37;
+    color: #f5e0dc;
+}
+
+.search-box.light-mode #search-btn:hover {
+    background-color: #f1fa8c;
+}
+
+.filters.light-mode select {
+    background-color: #e0e0f1;
+    color: #2a2a37;
+    border: 1px solid #2a2a37;
+}
+
+/* Results in Light Mode */
+.result-item.light-mode {
+    background-color: #e0e0f1;
+    color: #2a2a37;
+}
+
+.result-item.light-mode:hover {
+    background-color: #c8c8f7;
+}
